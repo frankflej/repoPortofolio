@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/portofolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="images/frank.JPG" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <title>Login</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="previous">
+           <a href="index.html"> <img src="images/left.png" alt=""></a>
+        </div>
+
+        <div class="home login_page_home myflex_center">
+            <div class="login_form_section myflex_center">
+                <div class="login_start">
+                    <div class="mytitle login_title myfont_family myflex_center pt_20 pb_50">
+                        <p class="mywhite"><span class="myorange myL">L</span>ogin</p>
+                    </div>
+                    <div>
+                        <div id="msg">
+                            <p>Helllloooo</p>
+                        </div>
+                        <div class="myflex_center form_section">
+                          <div class="myform"> 
+                            <form action="dashboard.html" >
+                                <div class="login_input pb_20">
+                                    <div>
+                                        <input type="text" data-err="error" placeholder="Email" id="login_email" onkeydown="email_val('login_email','em_error')" onchange="email_val('login_email','em_error')">
+                                    </div>
+                                    <div>
+                                        <p class="myerror" id="em_error">Invalid Email</p>
+                                    </div>
+                                </div>
+                                <div class="login_input">
+                                    <div>
+                                        <input type="password" data-err="error"placeholder="Password" id="mypassword" onkeydown="msg_val('p_error','mypassword')" onchange="msg_val('p_error','mypassword')">
+                                    </div>
+                                    <div>
+                                        <p class="myerror" id="p_error">Password too short !</p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="myflex_between sign_up">
+                                   <a href="sign_up.html">
+                                    <div class="mywhite">
+                                        <p>Create account</p>
+                                    </div>
+                                   </a>
+                                    <div class="mywhite">
+                                        <p>Forgot Password</p>
+                                    </div>
+                                </div>
+                                <div class="login_submit ">
+                                    <button class="mywhite" id="mylogin">Login</button>
+                                </div>
+                            </form>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/index.js"></script>
+<script src="./js/login.js">  </script>
+</html>
